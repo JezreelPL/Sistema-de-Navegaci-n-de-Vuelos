@@ -1,6 +1,4 @@
-
 package Clases;
-
 
 public class Nodos {
 
@@ -8,22 +6,28 @@ public class Nodos {
     private String nombre;
     private String pais;
 
-    // Apuntador al siguiente nodo
     private Nodos siguiente;
 
-    // Lista de vuelos (aristas)
     private Aristas listaAristas;
+    private boolean visitado;
 
-    // Constructor
     public Nodos(String codigo, String nombre, String pais) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.pais = pais;
         this.siguiente = null;
         this.listaAristas = null;
+        this.visitado = false;
     }
 
-    // Getters y Setters
+    public boolean isVisitado() {
+        return visitado;
+    }
+
+    public void setVisitado(boolean visitado) {
+        this.visitado = visitado;
+    }
+
     public String getCodigo() {
         return codigo;
     }
