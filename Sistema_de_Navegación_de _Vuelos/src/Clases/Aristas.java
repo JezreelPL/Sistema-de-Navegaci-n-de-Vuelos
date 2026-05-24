@@ -4,7 +4,6 @@ package Clases;
 
 public class Aristas {
 
-    // Nodo destino
     private Nodos destino;
 
     private double distancia;
@@ -12,10 +11,8 @@ public class Aristas {
     private double tiempoVuelo;
     private double tiempoEspera;
 
-    // Apuntador a la siguiente arista
     private Aristas siguiente;
 
-    // Constructor
     public Aristas(Nodos destino, double distancia, double precio,double tiempoVuelo,double tiempoEspera) {
 
         this.destino = destino;
@@ -26,7 +23,6 @@ public class Aristas {
         this.siguiente = null;
     }
 
-    // Getters y Setters
     public Nodos getDestino() {
         return destino;
     }
