@@ -26,7 +26,7 @@ public class Grafo {
             }
             actual.setSiguiente(nuevo);
         }
-        return "Aeropuerto " + nombre + " registrado correctamente.";
+        return "Aeropuerto '" + nombre + "' registrado correctamente.";
     }
 
     // BUSCAR AEROPUERTO POR CODIGO
@@ -91,7 +91,7 @@ public class Grafo {
 
     // MOSTRAR CONEXIONES
     public String mostrarConexiones() {
-        if (primero == null) return "No hay aeropuertos registrados.";
+        if (primero == null) return "Sin aeropuertos registrados.";
 
         String texto = "";
         Nodos actual = primero;
